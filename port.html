@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aarthi's Portfolio</title>
+  <link rel="stylesheet" href="port.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Hey! I'm Aarthi</h1>
+      <h2>Computer Science Student</h2>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="content">
+      <div class="name-container">
+        <h1 class="main-name">AARTHI KUMAR</h1>
+        <div class="name-border"></div>
+      </div>
+      
+      <h2 class="subtitle">Aspiring Fullstack Developer</h2>
+      
+      <div class="about-content">
+        <p>Passionate computer science student specializing in full-stack development with hands-on experience in Flutter, JavaScript, and modern web technologies. Dedicated to creating efficient, user-friendly digital solutions.</p>
+        
+        <div class="highlight-box">
+          <p>"Transforming ideas into functional applications through clean code and innovative thinking."</p>
+        </div>
+        
+        <div class="button">
+          <a href="c:\Users\kaart\OneDrive\Documents\resume.pdf" class="btn" target="_blank">View Full Resume</a>
+          <div class="sci">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="content">
+      <h1>Achievements</h1>
+      
+      <div class="achievement-row">
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\stack queue.jpg">
+          <h3>Fullstack Internship</h3>
+          <p>STACK QUEUE EDUCATION</p>
+        </div>
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\corizo.jpg">
+          <h3>Web Development Internship</h3>
+          <p>CORIZO</p>
+        </div>
+      </div>
+
+      <div class="achievement-row">
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\iot.jpg">
+          <h3>Internet Of Things</h3>
+          <p>NPTEL</p>
+        </div>
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\cloud computing.jpg">
+          <h3>Cloud Computing</h3>
+          <p>NPTEL</p>
+        </div>
+      </div>
+
+      <div class="achievement-row">
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\kongu ppt.jpg">
+          <h3>Paper presented on Blockchain Technology</h3>
+          <p>Kongu Engineering College</p>
+        </div>
+        <div class="achievement-box" data-full="c:\Users\kaart\OneDrive\Documents\bannari.jpg">
+          <h3>Paper presented on UI & UX design</h3>
+          <p>Bannari Amman College</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Fill in the form below:</p>
+    <div class="contact-card">
+      <form class="contact-form" onsubmit="showMessage(event)">
+        <div class="form-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Your Name</label>
+        </div>
+  
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email Address</label>
+        </div>
+  
+        <div class="form-group">
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+  
+        <button type="submit">Send ✉️</button>
+        <p id="form-response" class="success-message"></p>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Certificate Modal -->
+  <div id="modal" class="modal">
+    <span id="close-btn">&times;</span>
+    <img id="modal-img" class="modal-content" src="" alt="Full Certificate">
+  </div>
+
+  <script src="port.js"></script>
+</body>
+</html>
